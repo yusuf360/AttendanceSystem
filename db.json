@@ -7,29 +7,36 @@
     }
   ],
   "register": [
-    {
-      "id": 0,
-      "firstName": "",
-      "lastName": "",
-      "password": "",
-      "confirmPassword": "",
-      "address": "",
-      "time": ""
+    {"firstName": "lateef",
+      "lastName": "yusuf",
+      "userName": "adewumi",
+      "email": "email@gmail.com",
+      "phoneNumber":"080438769",
+      "address": "something",
+      "password": "password",
+      "regtime": "1568718133727",
+      "id": 0
     },
     {
       "firstName": "lateef",
       "lastName": "yusuf",
       "userName": "adewumi",
       "email": "email@gmail.com",
+      "phoneNumber":"080438769",
       "address": "something",
       "password": "password",
       "regtime": "1568718133727",
       "id": 1
     },
     {
-      "firstName": "",
-      "password": "",
-      "regtime": "1568722694824",
+      "firstName": "lateef",
+      "lastName": "yusuf",
+      "userName": "adewumi",
+      "email": "email@gmail.com",
+      "phoneNumber":"o080438769",
+      "address": "something",
+      "password": "password",
+      "regtime": "1568718133727",
       "id": 2
     }
   ]

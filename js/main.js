@@ -1,50 +1,47 @@
-$(function(){
+$(function () {
 
 
     getRequest()
-function getRequest(){
-    $.ajax({
-        "url":"",
-        "type":"get",
-        beforeSend:function(){
+    function getRequest() {
+        $.ajax({
+            "url": "",
+            "type": "get",
+            beforeSend: function () {
 
-        },
+            },
 
-        success:function(data){
-    
-    
-    
-        },error: function(e){
+            success: function (data) {
 
-        }
-    })
 
-}
 
-function postRequest(){
-    let data={
-        
+            }, error: function (e) {
+
+            }
+        })
+
     }
-    $.ajax({
-        "url":"",
-        "type":"post",
-        
-        beforeSend:function(){
 
-        },
-
-        success:function(data){
-    
-    
-    
-        },error: function(e){
+    function postRequest() {
+        let data = {
 
         }
-    })
-}
-//getting request
+        $.ajax({
+            "url": "",
+            "type": "post",
+
+            beforeSend: function () {
+
+            },
+
+            success: function (data) {
 
 
- //$("")
+
+            }, error: function (e) {
+
+            }
+        })
+    }
+
 
 })
