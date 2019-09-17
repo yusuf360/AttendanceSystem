@@ -55,44 +55,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- <script src="js/jquery.serializeObject.min.js"></script> -->
     <script>
-        $(document).ready(function() {
-            $('#loginform').submit(function(e) {
-                e.preventDefault();
-                $('#button').hide();
-                $('.loader').show();
-                $('#wrong').empty();
-               // var formData = $(this).serialize();
 
-                
-
-                $.ajax({
-
-                    url: '',
-                    type: "POST",
-                    contentType: '',
-                    data: formData,
-                    success: function(data) {
-                      
-                       // window.location = "client.html"
-                        $('.loader').hide();
-                        $('#button').show();
-                    },
-                    error: function(error) {
-                       
-                      //  $('#wrong').append((JSON.stringify(error.responseJSON.error_description)))
-
-                        
-                        $('#wrong').show();
-                        $('.loader').hide();
-                        $('#button').show();
-
-                    }
-                })
-
-            })
-
-
-        })
     </script>
 </body>
 
