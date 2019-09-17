@@ -35,7 +35,7 @@ $(function(){
             
         }
         $.ajax({
-            "url":"http://localhost:3000/register",
+            "url":"http://localhost:3001/register",
             "method":"post",
             "contentType":"Application/json",
             "data":JSON.stringify(data),
