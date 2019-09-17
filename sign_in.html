@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<style>
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text">
+                    <h3>welcome to simple Attendance system UI</h3>
+
+                    <P><i>Simply Login with your credential..</i></P>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form">
+                    <form id="loginform">
+                        <p><i>Fill in the Details</i></p>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Password">
+                        </div>
+                        <div class="alert alert-warning form-group" id="wrong" style="display:none">
+                            <strong>Warning!</strong>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn btn-success" id="button">
+                            <div class="msg">
+                                
+                            <span class="message"> new to to this page kindly <a href="sign_up.html"> sign up</a> to Register</span>
+                            
+                            </div>
+                            <img src="img/loader1.gif" alt="" style="display : none;size: 2%; height: 50px;text-align: center; margin : auto;" class="loader">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/jquery.serializeObject.min.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            $('#loginform').submit(function(e) {
+                e.preventDefault();
+                $('#button').hide();
+                $('.loader').show();
+                $('#wrong').empty();
+               // var formData = $(this).serialize();
+
+                
+
+                $.ajax({
+
+                    url: '',
+                    type: "POST",
+                    contentType: '',
+                    data: formData,
+                    success: function(data) {
+                      
+                       // window.location = "client.html"
+                        $('.loader').hide();
+                        $('#button').show();
+                    },
+                    error: function(error) {
+                       
+                      //  $('#wrong').append((JSON.stringify(error.responseJSON.error_description)))
+
+                        
+                        $('#wrong').show();
+                        $('.loader').hide();
+                        $('#button').show();
+
+                    }
+                })
+
+            })
+
+
+        })
+    </script>
+</body>
+
+</html>
