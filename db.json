@@ -1,0 +1,33 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Adewummi latef",
+      "email": "g@mail.com"
+    }
+  ],
+  "register": [
+    {
+      "id": 0,
+      "firstName": "",
+      "lastName": "",
+      "password": "",
+      "confirmPassword": "",
+      "address": "",
+      "time": ""
+    },
+    {
+      "firstName": "lateef",
+      "lastName": "yusuf",
+      "userName": "adewumi",
+      "email": "email@gmail.com",
+      "address": "something",
+      "password": "password",
+      "regtime": "1568718133727",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
