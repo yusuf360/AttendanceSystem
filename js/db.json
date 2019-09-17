@@ -1,0 +1,14 @@
+{
+    "user": [
+      {  "name": "adewumi",
+        
+        "email":"good@gmail.com"},
+      {
+
+      }
+    ],
+    "comments": [
+      { "name": "some comment", "postId": 1 }
+    ]
+    
+  }
