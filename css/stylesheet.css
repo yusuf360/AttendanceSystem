@@ -13,7 +13,11 @@ body {
     text-align: center;
     margin-top: 100px;
 }
+
+
+
 .banner{
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
     text-transform: capitalize;
@@ -28,9 +32,10 @@ body {
     border-radius: 10px;
 }
 .mr{
-    margin-top: 100px;
+    margin-right: 300px;
     background: #ffffff;
-    padding: 3rem
+    padding: 3rem;
+
 }
 .foot{
     text-align: center;

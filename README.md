@@ -1,2 +1,0 @@
-# AttendanceSystem
-A simple Attendance
