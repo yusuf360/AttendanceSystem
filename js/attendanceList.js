@@ -6,18 +6,19 @@ $(function () {
     // devContainer.css({
     //     "background":"red"
     // })
-    $('.search').click(function(){
+    $('.search_btn').click(function(){
        let search= $('.search').val()
       
         GetAttendanceList(search)
-        $(".update_display").hide(-100)
+        $(".main_table").hide(-100)
+        $(".filter_table").show(100)
         
 
     })
     function GetAttendanceList(search) {
 
         $.ajax({
-            "url": `http://localhost:3000/register/${search}`,
+            "url": `http://localhost:3000/register/?userName=${search}`,
             "type": "get",
             "contentType": "Application/json",
             success: function (data) {

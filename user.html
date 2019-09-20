@@ -31,7 +31,10 @@
             </section> -->
         </header>
         <div class="form-group">
-            <input type="text"  class="form-control search" placeholder="search by Name"> 
+
+           <div>
+                <input type="text"  class="form-control search" placeholder="search by Name">
+           </div> <div><button class="btn btn-success search_btn">search by Name</button></div> 
         </div>
 
 
@@ -77,8 +80,8 @@
                 </form>
             </div>
             <!-- search table -->
-            <div>
-                <table class="table table-bordered bg-default">
+            <div class="">
+                <table class="table table-bordered bg-default filter_table" style="display: none">
                     <thead class="thead-dark">
                         <th>s/n</th>
                         <th> First Name</th>
@@ -108,7 +111,7 @@
 
 <!-- end update -->
 
-        <div>
+        <div class="main_table">
             <table class="table table-bordered bg-default">
                 <thead class="thead-dark">
                     <th>s/n</th>
