@@ -143,7 +143,18 @@ $(function () {
         let userDataObj = JSON.parse(userData)
 
         $.each(userDataObj, function (i, v) {
-            $(`input[name='${i}']`).val(v)
+
+
+
+            
+         $('.firstName').val(v.firstName);
+         $(' .lastName').val(v.lastName);
+        $(' .userName').val(v.userName);
+         $(' .email').val(v.email)
+        $(' .address').val(v.address);
+         $(' .password').val(v.password);
+         $(' .confirmPassword').val(v.password);
+           
         })
 
         $(".update_display").toggle()
@@ -154,6 +165,7 @@ $(function () {
     $("body").on('click', '#update', function (e) {
 
         e.preventDefault()
+        listOfAttendance()
         let id = $(this).val();
         listOfAttendance();
 
