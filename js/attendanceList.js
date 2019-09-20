@@ -6,6 +6,46 @@ $(function () {
     // devContainer.css({
     //     "background":"red"
     // })
+    $('.search').click(function(){
+       let search= $('.search').val()
+      
+        GetAttendanceList(search)
+        $(".update_display").hide(-100)
+        
+
+    })
+    function GetAttendanceList(search) {
+
+        $.ajax({
+            "url": `http://localhost:3000/register/${search}`,
+            "type": "get",
+            "contentType": "Application/json",
+            success: function (data) {
+                let list = localStorage.setItem('list', JSON.stringify(data))
+                let listOfAttend = ''
+                $.each(data, function (i, v) {
+                    listOfAttend += `
+                    <tr>
+                    <td>${i + 1}</td>
+                    <td>${v.firstName}</td>
+                    <td>${v.lastName}</td>
+                    <td>${v.phoneNumber}</td>
+                    <td>${v.email}</td>
+                    <td> <button value='${v.id}' class="btn btn-danger delete ">delet</button><button value='${v.id}' class="btn btn-success update">update</button> </td>
+                </tr> `;
+                })
+
+
+
+
+                $("#member").html(listOfAttend);
+            },
+            error: function (e) {
+
+            }
+
+        })
+    }
 
     
     listOfAttendance()

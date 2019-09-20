@@ -15,6 +15,7 @@ $("#button").click(function(e){
 
     let getList= localStorage.getItem('list')
         registeredList=JSON.parse(getList)
+        var username=$('.username').val()
         let loginCred={
                 "name": $('.username').val(),
                 "email": $('.password').val()
@@ -30,11 +31,12 @@ $("#button").click(function(e){
                        
                         success:function(data){
                             $("#button").html('Login')
+                              $('.welcome').html(' <p>welcome Mr <span>Mr '+username+' </span> </p>',1000)
                             alert("you are welcome")
             
                         },
                         error:function(e){
-                            alert("", JSON.stringify(e))
+                            alert("Error :", JSON.stringify(e))
                         }
             
                     })

@@ -13,7 +13,13 @@ body {
     text-align: center;
     margin-top: 100px;
 }
+.welcome{
+    text-align: center;
+        position: relative;
+        top: 140px;
 
+
+}
 
 
 .banner{
